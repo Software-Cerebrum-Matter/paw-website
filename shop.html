@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop – Heel Pet Trusters</title>
+<meta name="description" content="Dog walking accessories from Heel: water bottles, raincoats, shoes, harnesses and more. Order on WhatsApp.">
+<link rel="icon" type="image/png" href="images/logo/heel-icon-32.png">
+<link rel="apple-touch-icon" href="images/logo/heel-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--text:#23211F;--bg:#fff;--surface:#fff;--line:#e8e2d6;--btn-ink:#fff;--hdr:rgba(255,255,255,.95);--muted:#5b5855;--yellow:#22A895;--coral:#23211F;--teal:#23211F;--sky:#E9E6E0;--cream:#F6F3EE;--c1:#CFEFE9;--c2:#E9E6E0;--c3:#A6E0D6;--s2:#22A895;--radius:22px}
+[data-theme="dark"]{--text:#F2EFEA;--bg:#1B1A18;--surface:#2A2826;--line:#3d3a36;--muted:#B8B3AB;--coral:#22A895;--btn-ink:#23211F;--teal:#17413B;--cream:#201E1C;--c1:#1F3B36;--c2:#2A2826;--c3:#24473F;--hdr:rgba(27,26,24,.95);color-scheme:dark}
+body,header,form,input,select,.contact{transition:background .25s,color .25s}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+h1,h2,h3,.logo{font-family:'Fredoka',system-ui,sans-serif;line-height:1.1}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:28px}
+.btn{display:inline-block;background:var(--coral);color:var(--btn-ink);font:inherit;font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(.95)}
+.btn.alt{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px var(--text)}
+.btn.yellow{background:var(--yellow);color:#23211F}
+
+header{position:sticky;top:0;z-index:10;background:var(--hdr);backdrop-filter:blur(8px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-size:1.7rem;font-weight:700;text-decoration:none;letter-spacing:.06em}
+.logo img{height:56px;width:auto;display:block}.lg-d{height:66px!important;margin:-4px 0}
+.lg-d{display:none!important}[data-theme="dark"] .lg-l{display:none!important}[data-theme="dark"] .lg-d{display:block!important}
+.theme-btn{display:inline-flex;align-items:center;gap:6px;background:transparent;border:2px solid var(--line);color:var(--text);font:inherit;font-weight:600;font-size:.85rem;padding:7px 12px;border-radius:999px;cursor:pointer}
+.theme-btn:hover{border-color:var(--coral)}
+nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{color:var(--coral)}
+nav .btn,nav .btn:hover{color:var(--btn-ink)}
+.nav-cta{padding:10px 22px;font-size:.95rem}
+@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)){display:none}.theme-btn span:last-child{display:none}nav ul{gap:12px}}
+
+/* hero */
+.hero{background:var(--yellow);color:#23211F;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.4rem);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:#fff;background:#23211F;padding:0 .25em;border-radius:14px;display:inline-block;transform:rotate(-2deg)}
+.hero p{font-size:1.2rem;margin-bottom:26px;max-width:32ch}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:#23211F;color:#fff}
+.hero .btn.alt{background:#fff;color:#23211F;box-shadow:none}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.chips span{background:#fff;color:#23211F;border-radius:999px;padding:7px 16px;font-weight:600;font-size:.92rem}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 70%;border-radius:36% 64% 40% 60% / 40% 40% 60% 60%;border:6px solid #fff;box-shadow:0 20px 40px rgba(20,32,43,.2)}
+.tag{position:absolute;left:-18px;bottom:24px;background:#fff;color:#23211F;border-radius:18px;padding:16px 22px;font-size:1.25rem;border-left:8px solid #23211F;box-shadow:0 12px 28px rgba(20,32,43,.25);text-decoration:none;font-weight:700;display:flex;gap:10px;align-items:center}
+.tag i{font-style:normal;font-size:2.2rem}
+.tag small{display:block;font-weight:800;color:#c0392b;font-size:.8rem;letter-spacing:.06em}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.photo{max-width:340px;margin:0 auto}.tag{left:0}}
+
+.side-tab{position:fixed;right:0;top:50%;z-index:15;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;background:var(--teal);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.05em;padding:16px 10px;border-radius:0 10px 10px 0;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+
+/* cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.walk{border-radius:var(--radius);padding:30px;text-align:center}
+.walk .ico{font-size:3rem;display:block;margin-bottom:6px}
+.walk h3{font-size:1.5rem}
+.walk p{margin:6px 0 14px;font-weight:500}
+.walk .price{display:inline-block;background:#fff;color:#23211F;border-radius:999px;padding:6px 18px;font-weight:700}
+.c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}
+
+.steps{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.step{text-align:center}
+.step b{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:var(--coral);color:var(--btn-ink);font-family:'Fredoka';font-size:1.8rem}
+.step:nth-child(2) b{background:var(--s2)}.step:nth-child(3) b{background:var(--yellow);color:#23211F}
+.step h3{font-size:1.3rem}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* onboarding */
+.pack{background:var(--teal);color:#fff;border-radius:34px;padding:44px 36px;display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
+.pack .badge{display:inline-block;background:var(--yellow);color:#23211F;font-weight:700;font-size:.8rem;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.pack h2{margin-bottom:10px}
+.pack p{margin-bottom:20px;font-size:1.05rem}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.item{background:#fff;color:#23211F;border-radius:18px;padding:16px;text-align:center;font-weight:700}
+.item i{display:block;font-style:normal;font-size:2rem}
+.item small{display:block;font-weight:500;color:#51606c;font-size:.82rem}
+@media(max-width:820px){.pack{grid-template-columns:1fr;padding:32px 22px}}
+
+
+.pp{font-family:'Fredoka';font-size:2.6rem;font-weight:700;line-height:1;margin:2px 0 8px}
+.why{margin-top:36px}
+.why h3{font-size:1.6rem;margin-bottom:16px}
+.whygrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.w{border-radius:var(--radius);padding:22px}
+.w i{font-style:normal;font-size:2rem;display:block;margin-bottom:6px}
+.w b{display:block;font-size:1.1rem;margin-bottom:2px}
+.w span{color:var(--muted);font-size:.93rem}
+.t1{background:var(--c1)}.t2{background:var(--c2)}.t3{background:var(--c3)}
+.fine{margin-top:14px;font-size:.85rem;color:var(--muted)}
+.plan{position:relative;border-radius:var(--radius);padding:28px;text-align:center}
+.plan h3{font-size:1.5rem}
+.plan .pr{font-family:'Fredoka';font-size:2.4rem;font-weight:700;margin:6px 0 12px}
+.plan ul{list-style:none}.plan li{margin-bottom:6px}
+.pop{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#23211F;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.06em;padding:5px 14px;border-radius:999px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
+.fs{background:var(--c2);border-radius:var(--radius);padding:18px 14px;text-align:center;position:relative}
+.fs:nth-child(1){background:var(--c1)}.fs:nth-child(5){background:var(--c3)}.fs:nth-child(7){background:var(--c1)}
+.fs b{position:absolute;top:-10px;left:-6px;background:var(--coral);color:var(--btn-ink);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.9rem}
+.fs i{font-style:normal;font-size:2rem;display:block}
+.fs strong{display:block;font-size:1.02rem}
+.fs span{font-size:.85rem;color:var(--muted)}
+.fa{align-self:center;font-size:1.6rem;color:var(--coral);font-weight:700}
+.fine a{text-decoration:underline}
+@media(max-width:820px){.flow{grid-template-columns:1fr 1fr}.fa{display:none}}
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);grid-auto-rows:220px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.gallery .tall{grid-row:span 2}.gallery .wide{grid-column:span 2}
+@media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}}
+
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{padding:9px 18px;border-radius:999px;font-weight:600;background:var(--c2)}
+.pills span:nth-child(3n+2){background:var(--c1)}.pills span:nth-child(3n){background:var(--c3)}
+
+/* contact */
+.contact{background:var(--cream)}
+.contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+@media(max-width:820px){.contact .wrap{grid-template-columns:1fr}}
+.contact p{font-size:1.1rem;margin-bottom:10px;font-weight:600}
+form{background:var(--surface);border-radius:var(--radius);padding:26px;display:grid;gap:12px;box-shadow:0 10px 30px rgba(20,32,43,.08)}
+label{font-weight:600;font-size:.9rem;display:grid;gap:4px}
+input,select{font:inherit;padding:12px 14px;border:2px solid var(--line);border-radius:12px;width:100%;background:var(--bg);color:var(--text)}
+input:focus,select:focus{outline:none;border-color:var(--coral)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+
+footer{background:#23211F;color:#cfd6dc;padding:28px 0;text-align:center;font-size:.9rem}
+footer a{color:var(--yellow)}
+.wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:20}
+
+.shop-hero{background:var(--yellow);color:#23211F;padding:48px 0 40px}
+.shop-hero h1{font-size:clamp(2.2rem,5vw,3.4rem)}
+.shop-hero p{margin-top:8px;font-size:1.1rem}
+.cats{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 22px}
+.cat{background:var(--c2);color:var(--text);border:0;font:inherit;font-weight:600;padding:9px 18px;border-radius:999px;cursor:pointer}
+.cat.on{background:var(--coral);color:var(--btn-ink)}
+.prods{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.prod{border:2px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;background:var(--surface)}
+.prod .pic{height:150px;display:grid;place-items:center;font-size:4.2rem}
+.prod .body{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.prod h3{font-size:1.15rem}
+.prod .d{color:var(--muted);font-size:.88rem;flex:1}
+.prod .pr{font-family:'Fredoka';font-size:1.4rem;font-weight:600}
+.prod select{padding:8px 10px;font-size:.9rem}
+.prod .btn{padding:10px 16px;text-align:center;font-size:.95rem}
+.fab{position:fixed;left:18px;bottom:18px;z-index:20;background:var(--coral);color:var(--btn-ink);border:0;font:inherit;font-weight:700;padding:14px 22px;border-radius:999px;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--bg);z-index:40;box-shadow:-10px 0 30px rgba(0,0,0,.3);transform:translateX(105%);transition:.25s;display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:2px solid var(--line)}
+.dhead h3{font-size:1.4rem}
+.dclose{background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--text)}
+#cartList{flex:1;overflow:auto;padding:12px 20px}
+.ci{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ci small{color:var(--muted)}
+.qty{display:inline-flex;align-items:center;gap:8px}
+.qty button{width:28px;height:28px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--text);font-weight:700;cursor:pointer}
+.dfoot{padding:16px 20px;border-top:2px solid var(--line);display:grid;gap:10px}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:1.2rem}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:35;display:none}.scrim.show{display:block}
+</style>
+<script>try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo" aria-label="Heel Pet Trusters home"><img class="lg-l" src="images/logo/heel-light.svg" alt="Heel Pet Trusters"><img class="lg-d" src="images/logo/heel-dark.svg" alt="Heel Pet Trusters"></a>
+      <ul>
+        <li><a href="index.html#walks">Walks</a></li>
+        <li><a href="index.html#pack">New dogs</a></li>
+        <li><a href="index.html#plans">Plans</a></li>
+        <li><a href="index.html#areas">Areas</a></li>
+        <li><a href="shop.html" style="color:var(--coral)">Shop</a></li>
+        <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch dark or light mode"><span id="themeIco">🌙</span><span id="themeTxt">Dark</span></button></li>
+        <li><a href="index.html#book" class="btn nav-cta">Book a walk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="shop-hero">
+  <div class="wrap">
+    <h1>Heel Shop</h1>
+    <p>Walk-ready gear for your dog. Order on WhatsApp.</p>
+  </div>
+</section>
+<section style="padding-top:8px">
+  <div class="wrap">
+    <div class="cats" id="cats"></div>
+    <div class="prods" id="prods"></div>
+    <p class="fine">Sample products and prices. Final range, prices and delivery to be confirmed. Orders are confirmed with you on WhatsApp before payment.</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap"><img src="images/logo/heel-dark.svg" alt="Heel Pet Trusters" style="height:84px;margin:-8px auto 0;display:block">© <span id="yr"></span> Heel · Chennai · Photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></div>
+</footer>
+
+<button class="fab" id="fab" type="button">🛒 Cart (<span id="cnt">0</span>)</button>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dhead"><h3>Your cart</h3><button class="dclose" id="dclose" type="button" aria-label="Close cart">×</button></div>
+  <div id="cartList"></div>
+  <div class="dfoot">
+    <div class="tot"><span>Total</span><span id="total">₹0</span></div>
+    <input id="cname" placeholder="Your name">
+    <input id="caddr" placeholder="Delivery area in Chennai">
+    <button class="btn" id="order" type="button">Order on WhatsApp</button>
+  </div>
+</aside>
+<a class="wa" href="https://wa.me/919876543210" aria-label="Chat on WhatsApp">💬</a>
+<script>
+const WA_NUMBER='919876543210'; // TODO: real number
+const P=[
+ {id:'bottle',c:'Hydration',n:'Collapsible water bottle',d:'Squeeze-fill bottle with drinking tray.',p:299,e:'💧',bg:'c2'},
+ {id:'bowl',c:'Hydration',n:'Travel water bowl',d:'Foldable silicone bowl with clip.',p:199,e:'🥣',bg:'c1'},
+ {id:'rain',c:'Weather',n:'Waterproof raincoat',d:'Hooded, reflective trim. Monsoon ready.',p:599,e:'🧥',bg:'c3',sz:['S','M','L','XL']},
+ {id:'boots',c:'Weather',n:'Paw boots (set of 4)',d:'Protect paws from hot roads and rain.',p:799,e:'🥾',bg:'c1',sz:['S','M','L']},
+ {id:'bandana',c:'Weather',n:'Cooling bandana',d:'Soak, tie, stay cool in Chennai heat.',p:249,e:'🧣',bg:'c2',sz:['S','M','L']},
+ {id:'harness',c:'Walking',n:'No-pull harness',d:'Padded and adjustable. Safer than a collar.',p:699,e:'🦺',bg:'c3',sz:['S','M','L']},
+ {id:'leash',c:'Walking',n:'Strong leash (5 ft)',d:'Reflective stitching, comfy handle.',p:349,e:'🦮',bg:'c1'},
+ {id:'collar',c:'Walking',n:'Reflective collar',d:'Visible at dawn and dusk.',p:399,e:'⭕',bg:'c2',sz:['S','M','L']},
+ {id:'tag',c:'Safety',n:'Engraved ID tag',d:'Name and phone number engraved.',p:199,e:'🏷️',bg:'c3'},
+ {id:'bags',c:'Walking',n:'Poop bags (6 rolls)',d:'Leak-proof, easy tear.',p:149,e:'🧻',bg:'c1'},
+ {id:'pouch',c:'Walking',n:'Treat pouch',d:'Clips on your belt. Quick-open.',p:299,e:'👝',bg:'c2'},
+ {id:'wipes',c:'Weather',n:'Paw wipes (80 pcs)',d:'Clean paws after every walk.',p:179,e:'🧼',bg:'c3'}
+];
+const cats=['All',...new Set(P.map(x=>x.c))];let cat='All';
+let cart=[];try{cart=JSON.parse(localStorage.getItem('cart')||'[]')}catch(e){}
+const $=id=>document.getElementById(id),inr=n=>'₹'+n.toLocaleString('en-IN');
+function save(){try{localStorage.setItem('cart',JSON.stringify(cart))}catch(e){}}
+function renderCats(){$('cats').innerHTML=cats.map(c=>`<button class="cat${c===cat?' on':''}" data-c="${c}">${c}</button>`).join('')}
+function renderProds(){$('prods').innerHTML=P.filter(x=>cat==='All'||x.c===cat).map(x=>`<div class="prod"><div class="pic ${x.bg}">${x.e}</div><div class="body"><h3>${x.n}</h3><div class="d">${x.d}</div>${x.sz?`<select id="sz-${x.id}">${x.sz.map(s=>`<option>${s}</option>`).join('')}</select>`:''}<div class="pr">${inr(x.p)}</div><button class="btn" data-add="${x.id}">Add to cart</button></div></div>`).join('')}
+function renderCart(){
+  const n=cart.reduce((a,i)=>a+i.q,0);$('cnt').textContent=n;
+  $('cartList').innerHTML=cart.length?cart.map((i,k)=>`<div class="ci"><div><b>${i.n}</b><br><small>${i.s?'Size '+i.s+' · ':''}${inr(i.p)}</small></div><div class="qty"><button data-q="${k}" data-d="-1">−</button>${i.q}<button data-q="${k}" data-d="1">+</button></div></div>`).join(''):'<div class="empty">Your cart is empty.</div>';
+  $('total').textContent=inr(cart.reduce((a,i)=>a+i.p*i.q,0));
+}
+document.addEventListener('click',e=>{
+  const t=e.target;
+  if(t.dataset.c){cat=t.dataset.c;renderCats();renderProds()}
+  if(t.dataset.add){const x=P.find(p=>p.id===t.dataset.add),sel=$('sz-'+x.id),s=sel?sel.value:'';const f=cart.find(i=>i.id===x.id&&i.s===s);f?f.q++:cart.push({id:x.id,n:x.n,p:x.p,s,q:1});save();renderCart();t.textContent='Added ✓';setTimeout(()=>t.textContent='Add to cart',900)}
+  if(t.dataset.q){const i=cart[+t.dataset.q];i.q+=+t.dataset.d;if(i.q<1)cart.splice(+t.dataset.q,1);save();renderCart()}
+});
+function open_(o){$('drawer').classList.toggle('open',o);$('scrim').classList.toggle('show',o)}
+$('fab').onclick=()=>open_(true);$('dclose').onclick=$('scrim').onclick=()=>open_(false);
+$('order').onclick=()=>{
+  if(!cart.length){alert('Your cart is empty.');return}
+  const lines=cart.map(i=>`• ${i.n}${i.s?' ('+i.s+')':''} x${i.q} = ${inr(i.p*i.q)}`).join('\n');
+  const msg=`Hi Heel! I'd like to order:\n${lines}\nTotal: ${$('total').textContent}\nName: ${$('cname').value||'-'}\nArea: ${$('caddr').value||'-'}`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
+};
+const root=document.documentElement,tb=$('themeBtn');
+function paint(){const d=root.getAttribute('data-theme')==='dark';$('themeIco').textContent=d?'☀️':'🌙';$('themeTxt').textContent=d?'Light':'Dark'}
+tb.addEventListener('click',()=>{const n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
+paint();renderCats();renderProds();renderCart();
+$('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
