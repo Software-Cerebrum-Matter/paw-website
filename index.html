@@ -3,49 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Heel – Trusted Dog Walkers in Chennai</title>
+<title>Heel Pet Trusters – Trusted Dog Walkers in Chennai</title>
 <meta name="description" content="Heel: trusted dog walking in Chennai. Same walker every time, photo report after every walk. New dogs can start with an Onboarding Pack including microchipping.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%2323211F'/%3E%3Ccircle cx='32' cy='42' r='11' fill='%23fff'/%3E%3Ccircle cx='17' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='47' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='26' cy='17' r='6' fill='%23fff'/%3E%3Ccircle cx='38' cy='17' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/logo/heel-icon-32.png">
+<link rel="apple-touch-icon" href="images/logo/heel-icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#23211F;--muted:#5b5855;--yellow:#22A895;--coral:#23211F;--teal:#23211F;--sky:#E9E6E0;--cream:#F6F3EE;--c1:#CFEFE9;--c2:#E9E6E0;--c3:#A6E0D6;--s2:#22A895;--radius:22px}
+:root{--text:#23211F;--bg:#fff;--surface:#fff;--line:#e8e2d6;--btn-ink:#fff;--hdr:rgba(255,255,255,.95);--muted:#5b5855;--yellow:#22A895;--coral:#23211F;--teal:#23211F;--sky:#E9E6E0;--cream:#F6F3EE;--c1:#CFEFE9;--c2:#E9E6E0;--c3:#A6E0D6;--s2:#22A895;--radius:22px}
+[data-theme="dark"]{--text:#F2EFEA;--bg:#1B1A18;--surface:#2A2826;--line:#3d3a36;--muted:#B8B3AB;--coral:#22A895;--btn-ink:#23211F;--teal:#17413B;--cream:#201E1C;--c1:#1F3B36;--c2:#2A2826;--c3:#24473F;--hdr:rgba(27,26,24,.95);color-scheme:dark}
+body,header,form,input,select,.contact{transition:background .25s,color .25s}
+
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.5}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
 h1,h2,h3,.logo{font-family:'Fredoka',system-ui,sans-serif;line-height:1.1}
 a{color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 section{padding:64px 0}
 h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:28px}
-.btn{display:inline-block;background:var(--coral);color:#fff;font:inherit;font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn{display:inline-block;background:var(--coral);color:var(--btn-ink);font:inherit;font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
 .btn:hover{transform:translateY(-2px);filter:brightness(.95)}
-.btn.alt{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
-.btn.yellow{background:var(--yellow);color:var(--ink)}
+.btn.alt{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px var(--text)}
+.btn.yellow{background:var(--yellow);color:#23211F}
 
-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px)}
+header{position:sticky;top:0;z-index:10;background:var(--hdr);backdrop-filter:blur(8px)}
 nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{display:inline-flex;align-items:center;gap:10px;font-size:1.7rem;font-weight:700;text-decoration:none;letter-spacing:.06em}
-.logo svg{width:42px;height:42px}
+.logo img{height:56px;width:auto;display:block}.lg-d{height:66px!important;margin:-4px 0}
+.lg-d{display:none!important}[data-theme="dark"] .lg-l{display:none!important}[data-theme="dark"] .lg-d{display:block!important}
+.theme-btn{display:inline-flex;align-items:center;gap:6px;background:transparent;border:2px solid var(--line);color:var(--text);font:inherit;font-weight:600;font-size:.85rem;padding:7px 12px;border-radius:999px;cursor:pointer}
+.theme-btn:hover{border-color:var(--coral)}
 nav ul{display:flex;gap:26px;list-style:none;align-items:center}
 nav a{text-decoration:none;font-weight:600}
 nav a:hover{color:var(--coral)}
-nav .btn,nav .btn:hover{color:#fff}
+nav .btn,nav .btn:hover{color:var(--btn-ink)}
 .nav-cta{padding:10px 22px;font-size:.95rem}
-@media(max-width:760px){nav ul li:not(:last-child){display:none}}
+@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)){display:none}.theme-btn span:last-child{display:none}nav ul{gap:12px}}
 
 /* hero */
-.hero{background:var(--yellow);padding:56px 0 64px;position:relative;overflow:hidden}
+.hero{background:var(--yellow);color:#23211F;padding:56px 0 64px;position:relative;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
 .hero h1{font-size:clamp(2.6rem,6.5vw,4.4rem);margin-bottom:14px}
-.hero h1 em{font-style:normal;color:#fff;background:var(--coral);padding:0 .25em;border-radius:14px;display:inline-block;transform:rotate(-2deg)}
+.hero h1 em{font-style:normal;color:#fff;background:#23211F;padding:0 .25em;border-radius:14px;display:inline-block;transform:rotate(-2deg)}
 .hero p{font-size:1.2rem;margin-bottom:26px;max-width:32ch}
 .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:#23211F;color:#fff}
+.hero .btn.alt{background:#fff;color:#23211F;box-shadow:none}
 .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.chips span{background:#fff;border-radius:999px;padding:7px 16px;font-weight:600;font-size:.92rem}
+.chips span{background:#fff;color:#23211F;border-radius:999px;padding:7px 16px;font-weight:600;font-size:.92rem}
 .photo{position:relative}
 .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 70%;border-radius:36% 64% 40% 60% / 40% 40% 60% 60%;border:6px solid #fff;box-shadow:0 20px 40px rgba(20,32,43,.2)}
-.tag{position:absolute;left:-10px;bottom:24px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 12px 28px rgba(20,32,43,.25);text-decoration:none;font-weight:700;display:flex;gap:10px;align-items:center}
+.tag{position:absolute;left:-10px;bottom:24px;background:#fff;color:#23211F;border-radius:16px;padding:12px 16px;box-shadow:0 12px 28px rgba(20,32,43,.25);text-decoration:none;font-weight:700;display:flex;gap:10px;align-items:center}
 .tag i{font-style:normal;font-size:1.6rem}
 .tag small{display:block;font-weight:600;color:var(--teal);font-size:.78rem}
 @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.photo{max-width:340px;margin:0 auto}.tag{left:0}}
@@ -58,25 +67,25 @@ nav .btn,nav .btn:hover{color:#fff}
 .walk .ico{font-size:3rem;display:block;margin-bottom:6px}
 .walk h3{font-size:1.5rem}
 .walk p{margin:6px 0 14px;font-weight:500}
-.walk .price{display:inline-block;background:#fff;border-radius:999px;padding:6px 18px;font-weight:700}
+.walk .price{display:inline-block;background:#fff;color:#23211F;border-radius:999px;padding:6px 18px;font-weight:700}
 .c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}
 
 .steps{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
 .step{text-align:center}
-.step b{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:var(--coral);color:#fff;font-family:'Fredoka';font-size:1.8rem}
-.step:nth-child(2) b{background:var(--s2)}.step:nth-child(3) b{background:var(--yellow);color:var(--ink)}
+.step b{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:var(--coral);color:var(--btn-ink);font-family:'Fredoka';font-size:1.8rem}
+.step:nth-child(2) b{background:var(--s2)}.step:nth-child(3) b{background:var(--yellow);color:#23211F}
 .step h3{font-size:1.3rem}
 @media(max-width:560px){.steps{grid-template-columns:1fr}}
 
 /* onboarding */
 .pack{background:var(--teal);color:#fff;border-radius:34px;padding:44px 36px;display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
-.pack .badge{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;font-size:.8rem;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.pack .badge{display:inline-block;background:var(--yellow);color:#23211F;font-weight:700;font-size:.8rem;padding:5px 14px;border-radius:999px;margin-bottom:12px}
 .pack h2{margin-bottom:10px}
 .pack p{margin-bottom:20px;font-size:1.05rem}
 .items{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.item{background:#fff;color:var(--ink);border-radius:18px;padding:16px;text-align:center;font-weight:700}
+.item{background:#fff;color:#23211F;border-radius:18px;padding:16px;text-align:center;font-weight:700}
 .item i{display:block;font-style:normal;font-size:2rem}
-.item small{display:block;font-weight:500;color:var(--muted);font-size:.82rem}
+.item small{display:block;font-weight:500;color:#51606c;font-size:.82rem}
 @media(max-width:820px){.pack{grid-template-columns:1fr;padding:32px 22px}}
 
 
@@ -104,31 +113,30 @@ nav .btn,nav .btn:hover{color:#fff}
 .contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
 @media(max-width:820px){.contact .wrap{grid-template-columns:1fr}}
 .contact p{font-size:1.1rem;margin-bottom:10px;font-weight:600}
-form{background:#fff;border-radius:var(--radius);padding:26px;display:grid;gap:12px;box-shadow:0 10px 30px rgba(20,32,43,.08)}
+form{background:var(--surface);border-radius:var(--radius);padding:26px;display:grid;gap:12px;box-shadow:0 10px 30px rgba(20,32,43,.08)}
 label{font-weight:600;font-size:.9rem;display:grid;gap:4px}
-input,select{font:inherit;padding:12px 14px;border:2px solid #e8e2d6;border-radius:12px;width:100%}
+input,select{font:inherit;padding:12px 14px;border:2px solid var(--line);border-radius:12px;width:100%;background:var(--bg);color:var(--text)}
 input:focus,select:focus{outline:none;border-color:var(--coral)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:480px){.row{grid-template-columns:1fr}}
 
-footer{background:var(--ink);color:#cfd6dc;padding:28px 0;text-align:center;font-size:.9rem}
+footer{background:#23211F;color:#cfd6dc;padding:28px 0;text-align:center;font-size:.9rem}
 footer a{color:var(--yellow)}
 .wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:20}
 </style>
+<script>try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
 </head>
 <body>
 
 <header>
   <div class="wrap">
     <nav>
-      <a href="#" class="logo" aria-label="Heel home">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#23211F"/><ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/><ellipse cx="17" cy="29" rx="5.5" ry="7.5" transform="rotate(-20 17 29)" fill="#fff"/><ellipse cx="47" cy="29" rx="5.5" ry="7.5" transform="rotate(20 47 29)" fill="#fff"/><ellipse cx="26" cy="18" rx="5" ry="7" transform="rotate(-8 26 18)" fill="#fff"/><ellipse cx="38" cy="18" rx="5" ry="7" transform="rotate(8 38 18)" fill="#fff"/></svg>
-        HEEL
-      </a>
+      <a href="#" class="logo" aria-label="Heel Pet Trusters home"><img class="lg-l" src="images/logo/heel-light.svg" alt="Heel Pet Trusters"><img class="lg-d" src="images/logo/heel-dark.svg" alt="Heel Pet Trusters"></a>
       <ul>
         <li><a href="#walks">Walks</a></li>
         <li><a href="#pack">New dogs</a></li>
         <li><a href="#areas">Areas</a></li>
+        <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch dark or light mode"><span id="themeIco">🌙</span><span id="themeTxt">Dark</span></button></li>
         <li><a href="#book" class="btn nav-cta">Book a walk</a></li>
       </ul>
     </nav>
@@ -257,13 +265,17 @@ footer a{color:var(--yellow)}
 </main>
 
 <footer>
-  <div class="wrap">© <span id="yr"></span> Heel · Chennai · Photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></div>
+  <div class="wrap"><img src="images/logo/heel-dark.svg" alt="Heel Pet Trusters" style="height:84px;margin:-8px auto 0;display:block">© <span id="yr"></span> Heel · Chennai · Photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></div>
 </footer>
 
 <a class="side-tab" href="#pack">Onboarding Pack · Microchip</a>
 <a class="wa" href="https://wa.me/919876543210" aria-label="Chat on WhatsApp">💬</a>
 
 <script>
+const root=document.documentElement,tb=document.getElementById('themeBtn');
+function paint(){const d=root.getAttribute('data-theme')==='dark';document.getElementById('themeIco').textContent=d?'☀️':'🌙';document.getElementById('themeTxt').textContent=d?'Light':'Dark'}
+tb.addEventListener('click',()=>{const n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
+paint();
 document.getElementById('yr').textContent = new Date().getFullYear();
 // TODO: replace with the real WhatsApp number (country code, no + or spaces)
 const WA_NUMBER = '919876543210';
