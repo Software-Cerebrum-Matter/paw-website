@@ -39,7 +39,7 @@ nav a{text-decoration:none;font-weight:600}
 nav a:hover{color:var(--coral)}
 nav .btn,nav .btn:hover{color:var(--btn-ink)}
 .nav-cta{padding:10px 22px;font-size:.95rem}
-@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)):not(:nth-last-child(3)){display:none}.nav-cta{padding:8px 12px;font-size:.8rem;white-space:nowrap}nav ul{gap:8px!important}nav li a{font-size:.9rem}.logo img{height:38px!important}.lg-d{height:46px!important}nav{gap:6px}.theme-btn span:last-child{display:none}nav ul{gap:12px}}
+@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)){display:none}.nav-cta{padding:8px 12px;font-size:.8rem;white-space:nowrap}nav ul{gap:8px!important}nav li a{font-size:.9rem}.logo img{height:38px!important}.lg-d{height:46px!important}nav{gap:6px}nav ul{gap:12px}}
 
 /* hero */
 .hero{background:var(--yellow);color:#23211F;padding:56px 0 64px;position:relative;overflow:hidden}
@@ -104,6 +104,8 @@ nav .btn,nav .btn:hover{color:var(--btn-ink)}
 .plan .pr{font-family:'Fredoka';font-size:2.4rem;font-weight:700;margin:6px 0 12px}
 .plan ul{list-style:none}.plan li{margin-bottom:6px}
 .pop{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#23211F;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.06em;padding:5px 14px;border-radius:999px}
+.rule{margin-top:22px;background:var(--c3);border-left:8px solid #23211F;border-radius:14px;padding:16px 20px;font-size:1.05rem}
+.rule a{text-decoration:underline;font-weight:700}
 .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
 .fs{background:var(--c2);border-radius:var(--radius);padding:18px 14px;text-align:center;position:relative}
 .fs:nth-child(1){background:var(--c1)}.fs:nth-child(5){background:var(--c3)}.fs:nth-child(7){background:var(--c1)}
@@ -139,7 +141,6 @@ footer{background:#23211F;color:#cfd6dc;padding:28px 0;text-align:center;font-si
 footer a{color:var(--yellow)}
 .wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:20}
 </style>
-<script>try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
 </head>
 <body>
 
@@ -148,12 +149,10 @@ footer a{color:var(--yellow)}
     <nav>
       <a href="#" class="logo" aria-label="Heel Pet Trusters home"><img class="lg-l" src="images/logo/heel-light.svg" alt="Heel Pet Trusters"><img class="lg-d" src="images/logo/heel-dark.svg" alt="Heel Pet Trusters"></a>
       <ul>
-        <li><a href="#walks">Walks</a></li>
         <li><a href="#pack">New dogs</a></li>
         <li><a href="#plans">Plans</a></li>
         <li><a href="#areas">Areas</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch dark or light mode"><span id="themeIco">🌙</span><span id="themeTxt">Dark</span></button></li>
         <li><a href="#book" class="btn nav-cta">Book a walk</a></li>
       </ul>
     </nav>
@@ -168,9 +167,9 @@ footer a{color:var(--yellow)}
       <p>Same walker. Photo after every walk. Chennai.</p>
       <div class="actions">
         <a href="#book" class="btn">Book a walk</a>
-        <a href="#walks" class="btn alt">See prices</a>
+        <a href="#plans" class="btn alt">See plans</a>
       </div>
-      <div class="chips"><span>🐾 Same walker</span><span>📸 Photo reports</span><span>🌅 AM &amp; PM walks</span></div>
+      <div class="chips"><span>🐾 Same walker</span><span>📸 Photo reports</span><span>🔎 Microchip required</span><span>🌅 AM &amp; PM walks</span></div>
     </div>
     <div class="photo">
       <img src="images/hero.jpg" alt="Fluffy cream dog on a pink lead walking on green grass">
@@ -179,26 +178,16 @@ footer a{color:var(--yellow)}
   </div>
 </section>
 
-<section id="walks">
+<section id="plans">
   <div class="wrap">
-    <h2>Pick a walk</h2>
-    <div class="grid">
-      <div class="walk c1"><span class="ico">🌅</span><h3>Quick Walk</h3><p>30 minutes</p><span class="price">from ₹250</span></div>
-      <div class="walk c2"><span class="ico">🌳</span><h3>Full Walk</h3><p>60 minutes</p><span class="price">from ₹400</span></div>
-      <a class="walk c3" href="#plans" style="text-decoration:none;color:inherit"><span class="ico">📅</span><h3>Daily Subscription</h3><p>Dedicated walkers, same time</p><span class="price">see plans ↓</span></a>
-    </div>
-  </div>
-</section>
-
-<section id="plans" style="padding-top:0">
-  <div class="wrap">
-    <h2>Subscription plans</h2>
+    <h2>Pick a plan</h2>
     <div class="grid plans">
       <div class="plan c1"><h3>1 Month</h3><div class="pr">₹6,500</div><ul><li>30 days</li><li><b>26 walks</b> guaranteed</li><li>Up to 4 days off</li></ul></div>
       <div class="plan c2"><span class="pop">POPULAR</span><h3>3 Months</h3><div class="pr">₹18,000</div><ul><li>90 days</li><li><b>78 walks</b> guaranteed</li><li>Up to 12 days off</li></ul></div>
       <div class="plan c3"><span class="pop">BEST VALUE</span><h3>Yearly</h3><div class="pr">₹66,000</div><ul><li>12 months</li><li><b>312 walks</b> guaranteed</li><li>Up to 48 days off</li></ul></div>
     </div>
-    <p class="fine">Sample prices. Final pricing to be confirmed. Every plan starts with the compulsory Onboarding Pack.</p>
+    <div class="rule">🔎 <b>Onboarding Pack is compulsory.</b> We don't walk a dog without a microchip. <a href="#pack">See the pack</a></div>
+    <p class="fine">Sample prices. Final pricing to be confirmed.</p>
 
     <div class="why">
       <h3>How a plan works</h3>
@@ -232,7 +221,7 @@ footer a{color:var(--yellow)}
         <span class="badge">COMPULSORY FOR NEW DOGS</span>
         <h2>Onboarding Pack</h2>
         <div class="pp">₹400</div>
-        <p>Safe from the first walk.</p>
+        <p><b>No microchip, no walk.</b><br>Every new dog starts here.</p>
         <a href="#book" class="btn yellow">Get the pack</a>
       </div>
       <div class="items">
@@ -307,7 +296,7 @@ footer a{color:var(--yellow)}
       </div>
       <div class="row">
         <label>I want
-          <select name="service"><option>Onboarding Pack (₹400) + walks</option><option>Quick Walk (30 min)</option><option>Full Walk (60 min)</option><option>1-month plan</option><option>3-month plan</option><option>Yearly plan</option></select>
+          <select name="service"><option>1-month plan + Onboarding Pack (₹400)</option><option>3-month plan + Onboarding Pack (₹400)</option><option>Yearly plan + Onboarding Pack (₹400)</option></select>
         </label>
         <label>Microchipped?
           <select name="chip"><option>Not yet</option><option>Yes</option><option>Not sure</option></select>
@@ -327,10 +316,6 @@ footer a{color:var(--yellow)}
 <a class="wa" href="https://wa.me/919876543210" aria-label="Chat on WhatsApp">💬</a>
 
 <script>
-const root=document.documentElement,tb=document.getElementById('themeBtn');
-function paint(){const d=root.getAttribute('data-theme')==='dark';document.getElementById('themeIco').textContent=d?'☀️':'🌙';document.getElementById('themeTxt').textContent=d?'Light':'Dark'}
-tb.addEventListener('click',()=>{const n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
-paint();
 document.getElementById('yr').textContent = new Date().getFullYear();
 // TODO: replace with the real WhatsApp number (country code, no + or spaces)
 const WA_NUMBER = '919876543210';

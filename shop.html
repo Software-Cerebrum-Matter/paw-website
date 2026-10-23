@@ -39,7 +39,7 @@ nav a{text-decoration:none;font-weight:600}
 nav a:hover{color:var(--coral)}
 nav .btn,nav .btn:hover{color:var(--btn-ink)}
 .nav-cta{padding:10px 22px;font-size:.95rem}
-@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)):not(:nth-last-child(3)){display:none}.nav-cta{padding:8px 12px;font-size:.8rem;white-space:nowrap}nav ul{gap:8px!important}nav li a{font-size:.9rem}.logo img{height:38px!important}.lg-d{height:46px!important}nav{gap:6px}.theme-btn span:last-child{display:none}nav ul{gap:12px}}
+@media(max-width:760px){nav ul li:not(:last-child):not(:nth-last-child(2)){display:none}.nav-cta{padding:8px 12px;font-size:.8rem;white-space:nowrap}nav ul{gap:8px!important}nav li a{font-size:.9rem}.logo img{height:38px!important}.lg-d{height:46px!important}nav{gap:6px}nav ul{gap:12px}}
 
 /* hero */
 .hero{background:var(--yellow);color:#23211F;padding:56px 0 64px;position:relative;overflow:hidden}
@@ -170,7 +170,6 @@ footer a{color:var(--yellow)}
 .empty{color:var(--muted);padding:30px 0;text-align:center}
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:35;display:none}.scrim.show{display:block}
 </style>
-<script>try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
 </head>
 <body>
 
@@ -179,12 +178,10 @@ footer a{color:var(--yellow)}
     <nav>
       <a href="index.html" class="logo" aria-label="Heel Pet Trusters home"><img class="lg-l" src="images/logo/heel-light.svg" alt="Heel Pet Trusters"><img class="lg-d" src="images/logo/heel-dark.svg" alt="Heel Pet Trusters"></a>
       <ul>
-        <li><a href="index.html#walks">Walks</a></li>
         <li><a href="index.html#pack">New dogs</a></li>
         <li><a href="index.html#plans">Plans</a></li>
         <li><a href="index.html#areas">Areas</a></li>
         <li><a href="shop.html" style="color:var(--coral)">Shop</a></li>
-        <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch dark or light mode"><span id="themeIco">🌙</span><span id="themeTxt">Dark</span></button></li>
         <li><a href="index.html#book" class="btn nav-cta">Book a walk</a></li>
       </ul>
     </nav>
@@ -264,10 +261,7 @@ $('order').onclick=()=>{
   const msg=`Hi Heel! I'd like to order:\n${lines}\nTotal: ${$('total').textContent}\nName: ${$('cname').value||'-'}\nArea: ${$('caddr').value||'-'}`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
 };
-const root=document.documentElement,tb=$('themeBtn');
-function paint(){const d=root.getAttribute('data-theme')==='dark';$('themeIco').textContent=d?'☀️':'🌙';$('themeTxt').textContent=d?'Light':'Dark'}
-tb.addEventListener('click',()=>{const n=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
-paint();renderCats();renderProds();renderCart();
+renderCats();renderProds();renderCart();
 $('yr').textContent=new Date().getFullYear();
 </script>
 </body>
