@@ -4,121 +4,104 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Heel – Trusted Dog Walkers in Chennai</title>
-<meta name="description" content="Heel is Chennai's trusted dog walking service: regular walks by walkers you meet first, with a photo report every time. New dogs start with an optional Onboarding Pack.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%231b3a57'/%3E%3Ccircle cx='32' cy='42' r='11' fill='%23fff'/%3E%3Ccircle cx='17' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='47' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='26' cy='17' r='6' fill='%23fff'/%3E%3Ccircle cx='38' cy='17' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="description" content="Heel: trusted dog walking in Chennai. Same walker every time, photo report after every walk. New dogs can start with an Onboarding Pack including microchipping.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%23ff6b4a'/%3E%3Ccircle cx='32' cy='42' r='11' fill='%23fff'/%3E%3Ccircle cx='17' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='47' cy='28' r='6' fill='%23fff'/%3E%3Ccircle cx='26' cy='17' r='6' fill='%23fff'/%3E%3Ccircle cx='38' cy='17' r='6' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#f5f7f6;--ink:#14202b;--muted:#53616d;--orange:#1b3a57;--orange-d:#122a40;--teal:#2c6b5a;--teal-l:#e1eee9;--card:#fff;--line:#dbe2e7;--radius:10px}
+:root{--ink:#14202b;--muted:#51606c;--yellow:#ffc94d;--coral:#ff6b4a;--teal:#1fa89a;--sky:#e3f6f3;--cream:#fff6e5;--radius:22px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
-h1,h2,h3,.logo{font-family:'Source Serif 4',Georgia,serif;line-height:1.15}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.5}
+h1,h2,h3,.logo{font-family:'Fredoka',system-ui,sans-serif;line-height:1.1}
 a{color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px}
-.lead{color:var(--muted);max-width:62ch;margin-bottom:36px}
-.btn{display:inline-block;background:var(--orange);color:#fff;font:inherit;font-weight:700;padding:14px 26px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
-.btn:hover{background:var(--orange-d);transform:translateY(-2px)}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
-.btn.alt:hover{background:var(--ink);color:#fff}
-.hero .btn{background:#ffb84d;color:#14202b}
-.hero .btn:hover{background:#ffa526}
-.hero .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
-.hero .btn.alt:hover{background:#fff;color:#14202b}
+section{padding:64px 0}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:28px}
+.btn{display:inline-block;background:var(--coral);color:#fff;font:inherit;font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(.95)}
+.btn.alt{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.yellow{background:var(--yellow);color:var(--ink)}
 
-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{display:inline-flex;align-items:center;gap:9px;font-size:1.7rem;font-weight:700;text-decoration:none;color:var(--ink);letter-spacing:.08em}
-.logo svg{width:42px;height:42px;flex:none}
-.logo small{display:block;font-family:'Inter';font-size:.58rem;font-weight:700;letter-spacing:.14em;color:var(--teal);margin-top:-2px}
-.logo b{display:block;line-height:1}
-nav ul{display:flex;gap:24px;list-style:none;align-items:center}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-size:1.7rem;font-weight:700;text-decoration:none;letter-spacing:.06em}
+.logo svg{width:42px;height:42px}
+nav ul{display:flex;gap:26px;list-style:none;align-items:center}
 nav a{text-decoration:none;font-weight:600}
-nav a:hover{color:var(--orange)}
+nav a:hover{color:var(--coral)}
 nav .btn,nav .btn:hover{color:#fff}
-.nav-cta{padding:9px 20px;font-size:.95rem}
-@media(max-width:860px){nav ul li:not(:last-child){display:none}}
+.nav-cta{padding:10px 22px;font-size:.95rem}
+@media(max-width:760px){nav ul li:not(:last-child){display:none}}
 
-.hero{position:relative;overflow:hidden;padding:96px 0 104px;color:#fff;background:#14202b}
-.hero::before{content:'';position:absolute;top:0;right:0;bottom:0;width:48%;background:url(images/hero.jpg) center 72%/cover no-repeat}
-.hero::after{content:'';position:absolute;top:0;bottom:0;right:calc(48% - 120px);width:120px;background:linear-gradient(90deg,#14202b,rgba(20,32,43,0))}
-.hero .wrap{position:relative;z-index:1}
-.hero-card{position:absolute;right:28px;bottom:28px;width:270px;background:#fff;color:var(--ink);border-radius:var(--radius);padding:18px 20px;box-shadow:0 14px 36px rgba(0,0,0,.28);text-decoration:none;border-left:5px solid #ffb84d}
-.hero-card small{display:block;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
-.hero-card b{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:1.1rem;margin:2px 0 4px}
-.hero-card span{font-size:.85rem;color:var(--muted)}
-.hero-card em{display:block;margin-top:8px;font-style:normal;font-weight:700;font-size:.85rem;color:var(--orange)}
-.side-tab{position:fixed;right:0;top:50%;z-index:15;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;background:#ffb84d;color:#14202b;font-weight:700;font-size:.85rem;letter-spacing:.06em;padding:16px 10px;border-radius:0 8px 8px 0;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
-.side-tab:hover{background:#ffa526}
-.hero .wrap{display:block}.hero .wrap>div{max-width:540px}
-.eyebrow{display:inline-block;background:#ffb84d;color:#14202b;font-weight:700;padding:6px 14px;border-radius:6px;font-size:.85rem;letter-spacing:.03em;text-transform:uppercase;margin-bottom:18px}
-.hero h1{font-size:clamp(2.3rem,6vw,3.8rem);margin-bottom:18px}
-.hero h1 em{color:#ffb84d;font-style:normal}
-.hero p{font-size:1.15rem;color:#e8eef3;max-width:50ch;margin-bottom:28px}
-.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
-.hero-photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;box-shadow:0 18px 40px rgba(20,32,43,.18)}
-.trust{display:flex;gap:10px 26px;flex-wrap:wrap;margin-top:32px;color:#fff;font-weight:600;font-size:.95rem}
-@media(max-width:820px){.hero{padding:0 0 72px}.hero::before{position:relative;display:block;width:100%;height:300px;right:auto}.hero::after{display:none}.hero .wrap{padding-top:28px}.hero-card{position:relative;right:auto;bottom:auto;width:auto;margin:28px 20px 0}.side-tab{font-size:.75rem;padding:12px 8px}}
+/* hero */
+.hero{background:var(--yellow);padding:56px 0 64px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.4rem);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:#fff;background:var(--coral);padding:0 .25em;border-radius:14px;display:inline-block;transform:rotate(-2deg)}
+.hero p{font-size:1.2rem;margin-bottom:26px;max-width:32ch}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.chips span{background:#fff;border-radius:999px;padding:7px 16px;font-weight:600;font-size:.92rem}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 70%;border-radius:36% 64% 40% 60% / 40% 40% 60% 60%;border:6px solid #fff;box-shadow:0 20px 40px rgba(20,32,43,.2)}
+.tag{position:absolute;left:-10px;bottom:24px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 12px 28px rgba(20,32,43,.25);text-decoration:none;font-weight:700;display:flex;gap:10px;align-items:center}
+.tag i{font-style:normal;font-size:1.6rem}
+.tag small{display:block;font-weight:600;color:var(--teal);font-size:.78rem}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.photo{max-width:340px;margin:0 auto}.tag{left:0}}
 
-.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,32,43,.1)}
-.card .ico{font-size:2.4rem;margin-bottom:8px}
-.card h3{font-size:1.3rem;margin-bottom:8px}
-.card p{color:var(--muted);margin-bottom:12px}
-.card ul,.pack ul{list-style:none}
-.card li,.pack li{padding-left:24px;position:relative;margin-bottom:7px;font-size:.97rem}
-.card li::before,.pack li::before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--teal)}
-.price{font-family:'Source Serif 4';font-size:1.25rem;color:var(--teal);font-weight:600;margin-top:12px}
-.note{color:var(--muted);font-size:.88rem;margin-top:18px}
+.side-tab{position:fixed;right:0;top:50%;z-index:15;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;background:var(--teal);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.05em;padding:16px 10px;border-radius:0 10px 10px 0;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
 
-/* onboarding pack */
-.pack-sec{background:var(--teal);color:#fff}
-.pack-sec .lead{color:#d6efec}
-.pack{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch}
-@media(max-width:820px){.pack{grid-template-columns:1fr}}
-.pack .box{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px}
-.pack .box h3{font-size:1.6rem;margin-bottom:4px}
-.badge{display:inline-block;background:var(--orange);color:#fff;font-weight:700;font-size:.8rem;padding:4px 12px;border-radius:6px;margin-bottom:10px}
-.pack .side{background:rgba(255,255,255,.12);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;justify-content:center;gap:14px}
-.pack .side h3{font-size:1.3rem}
-.pack .side p{color:#e3f6f4}
+/* cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.walk{border-radius:var(--radius);padding:30px;text-align:center}
+.walk .ico{font-size:3rem;display:block;margin-bottom:6px}
+.walk h3{font-size:1.5rem}
+.walk p{margin:6px 0 14px;font-weight:500}
+.walk .price{display:inline-block;background:#fff;border-radius:999px;padding:6px 18px;font-weight:700}
+.c1{background:#ffe7a3}.c2{background:#bfece6}.c3{background:#ffd3c8}
 
-.steps{counter-reset:s;display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;counter-increment:s}
-.step::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:8px;background:var(--orange);color:#fff;font-family:'Source Serif 4';font-weight:700;margin-bottom:12px}
-.step h3{margin-bottom:6px;font-size:1.2rem}
-.step p{color:var(--muted);font-size:.96rem}
+.steps{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.step{text-align:center}
+.step b{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:var(--coral);color:#fff;font-family:'Fredoka';font-size:1.8rem}
+.step:nth-child(2) b{background:var(--teal)}.step:nth-child(3) b{background:var(--yellow);color:var(--ink)}
+.step h3{font-size:1.3rem}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
 
-.gallery{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);grid-auto-rows:210px}
-.gallery img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius);display:block}
-.gallery .tall{grid-row:span 2}
-.gallery .wide{grid-column:span 2}
-@media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}.gallery .wide{grid-column:span 2}}
+/* onboarding */
+.pack{background:var(--teal);color:#fff;border-radius:34px;padding:44px 36px;display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}
+.pack .badge{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;font-size:.8rem;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.pack h2{margin-bottom:10px}
+.pack p{margin-bottom:20px;font-size:1.05rem}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.item{background:#fff;color:var(--ink);border-radius:18px;padding:16px;text-align:center;font-weight:700}
+.item i{display:block;font-style:normal;font-size:2rem}
+.item small{display:block;font-weight:500;color:var(--muted);font-size:.82rem}
+@media(max-width:820px){.pack{grid-template-columns:1fr;padding:32px 22px}}
+
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);grid-auto-rows:220px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+.gallery .tall{grid-row:span 2}.gallery .wide{grid-column:span 2}
+@media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}}
 
 .pills{display:flex;flex-wrap:wrap;gap:10px}
-.pills span{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:6px;font-weight:600}
+.pills span{padding:9px 18px;border-radius:999px;font-weight:600;background:var(--sky)}
+.pills span:nth-child(3n+2){background:#ffe7a3}.pills span:nth-child(3n){background:#ffd3c8}
 
-details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
-summary{cursor:pointer;font-weight:700}
-details p{color:var(--muted);margin-top:10px}
-
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+/* contact */
+.contact{background:var(--cream)}
+.contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
 @media(max-width:820px){.contact .wrap{grid-template-columns:1fr}}
-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:grid;gap:14px}
-label{font-weight:700;font-size:.92rem;display:grid;gap:5px}
-input,select,textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);width:100%}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);border-color:var(--orange)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact p{font-size:1.1rem;margin-bottom:10px;font-weight:600}
+form{background:#fff;border-radius:var(--radius);padding:26px;display:grid;gap:12px;box-shadow:0 10px 30px rgba(20,32,43,.08)}
+label{font-weight:600;font-size:.9rem;display:grid;gap:4px}
+input,select{font:inherit;padding:12px 14px;border:2px solid #e8e2d6;border-radius:12px;width:100%}
+input:focus,select:focus{outline:none;border-color:var(--coral)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:480px){.row{grid-template-columns:1fr}}
-.info p{margin-bottom:14px;color:var(--muted)}
-.info strong{color:var(--ink)}
 
-footer{background:var(--ink);color:#d9cdbd;padding:32px 0;text-align:center;font-size:.9rem}
-footer .logo{margin-bottom:8px}
-footer a{color:#b9d4cb}
+footer{background:var(--ink);color:#cfd6dc;padding:28px 0;text-align:center;font-size:.9rem}
+footer a{color:var(--yellow)}
 .wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:20}
 </style>
 </head>
@@ -128,15 +111,14 @@ footer a{color:#b9d4cb}
   <div class="wrap">
     <nav>
       <a href="#" class="logo" aria-label="Heel home">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#1b3a57"/><ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/><ellipse cx="17" cy="29" rx="5.5" ry="7.5" transform="rotate(-20 17 29)" fill="#fff"/><ellipse cx="47" cy="29" rx="5.5" ry="7.5" transform="rotate(20 47 29)" fill="#fff"/><ellipse cx="26" cy="18" rx="5" ry="7" transform="rotate(-8 26 18)" fill="#fff"/><ellipse cx="38" cy="18" rx="5" ry="7" transform="rotate(8 38 18)" fill="#fff"/><path d="M32 47c-4-3-6-5.2-6-7.2a3.2 3.2 0 0 1 6-1.4 3.2 3.2 0 0 1 6 1.4c0 2-2 4.2-6 7.2z" fill="#9fd1c1"/></svg>
-        <span><b>HEEL</b><small>DOG WALKERS · CHENNAI</small></span>
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#ff6b4a"/><ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/><ellipse cx="17" cy="29" rx="5.5" ry="7.5" transform="rotate(-20 17 29)" fill="#fff"/><ellipse cx="47" cy="29" rx="5.5" ry="7.5" transform="rotate(20 47 29)" fill="#fff"/><ellipse cx="26" cy="18" rx="5" ry="7" transform="rotate(-8 26 18)" fill="#fff"/><ellipse cx="38" cy="18" rx="5" ry="7" transform="rotate(8 38 18)" fill="#fff"/></svg>
+        HEEL
       </a>
       <ul>
         <li><a href="#walks">Walks</a></li>
-        <li><a href="#pack">Onboarding Pack</a></li>
-        <li><a href="#why">Why microchip</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#book" class="btn nav-cta">Book now</a></li>
+        <li><a href="#pack">New dogs</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#book" class="btn nav-cta">Book a walk</a></li>
       </ul>
     </nav>
   </div>
@@ -146,165 +128,88 @@ footer a{color:#b9d4cb}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Dog walking · Chennai</span>
-      <h1>Reliable <em>dog walking</em> by walkers you meet first.</h1>
-      <p>Regular walks in Chennai's parks and streets, timed for cooler mornings and evenings. The same trusted walker every time, a secure lead and harness, and a photo report after every walk.</p>
+      <h1>Dog walking <em>you can trust</em></h1>
+      <p>Same walker. Photo after every walk. Chennai.</p>
       <div class="actions">
         <a href="#book" class="btn">Book a walk</a>
-        <a href="#walks" class="btn alt">See walk plans</a>
+        <a href="#walks" class="btn alt">See prices</a>
       </div>
-      <div class="trust"><span>✓ Same walker every time</span><span>✓ Photo report after every walk</span><span>✓ Mornings &amp; evenings</span></div>
+      <div class="chips"><span>🐾 Same walker</span><span>📸 Photo reports</span><span>🌅 AM &amp; PM walks</span></div>
+    </div>
+    <div class="photo">
+      <img src="images/hero.jpg" alt="Fluffy cream dog on a pink lead walking on green grass">
+      <a href="#pack" class="tag"><i>🔖</i><span><small>NEW DOG?</small>Onboarding Pack</span></a>
     </div>
   </div>
-    <a href="#pack" class="hero-card"><small>New to Heel?</small><b>Onboarding Pack</b><span>Microchip, pet licence help &amp; meet &amp; greet for new dogs.</span><em>See what's included →</em></a>
 </section>
 
 <section id="walks">
   <div class="wrap">
-    <h2>Dog walking, nothing else</h2>
-    <p class="lead">We don't do everything. We walk dogs — and we're good at it. Pick the walk that fits your dog's energy and your schedule.</p>
+    <h2>Pick a walk</h2>
     <div class="grid">
-      <article class="card">
-        
-        <h3>Quick Walk · 30 min</h3>
-        <p>For small dogs, seniors and busy days.</p>
-        <ul><li>Toilet break &amp; light exercise</li><li>Fresh water &amp; paw wipe-down</li><li>Photo update</li></ul>
-        <div class="price">From ₹250 / walk</div>
-      </article>
-      <article class="card">
-        
-        <h3>Full Walk · 60 min</h3>
-        <p>The all-rounder for active, energetic dogs.</p>
-        <ul><li>Long walk or park time</li><li>Sniffing, play &amp; basic manners practice</li><li>Photo update &amp; walk summary</li></ul>
-        <div class="price">From ₹400 / walk</div>
-      </article>
-      <article class="card">
-        
-        <h3>Weekly Walk Plan</h3>
-        <p>Same trusted walker, same time, every week.</p>
-        <ul><li>3, 5 or 6 walks a week</li><li>Discounted per-walk rate</li><li>Priority booking &amp; holiday cover</li></ul>
-        <div class="price">Ask for a plan quote</div>
-      </article>
-    </div>
-    <p class="note">Walks are timed for early morning and evening to avoid Chennai's midday heat. Prices are indicative; the final rate depends on dog size, area and frequency.</p>
-  </div>
-</section>
-
-<section id="pack" class="pack-sec">
-  <div class="wrap">
-    <h2>The Heel Onboarding Pack</h2>
-    <p class="lead">Every new dog starts here. We set your dog up properly — identification, paperwork and a walker who knows them — before the first walk.</p>
-    <div class="pack">
-      <div class="box">
-        <span class="badge">Included for every new dog</span>
-        <h3>What you get</h3>
-        <p style="color:var(--muted);margin-bottom:16px">One simple pack, one point of contact.</p>
-        <ul>
-          <li><strong>Free meet &amp; greet</strong> at your home with your walker</li>
-          <li><strong>Dog profile</strong>: health, habits, emergency vet and contacts</li>
-          <li><strong>Microchipping</strong> arranged with a qualified vet, with your details registered</li>
-          <li><strong>Pet licence help</strong>: we guide you through the Greater Chennai Corporation licence process and paperwork</li>
-          <li><strong>ID tag</strong> with our contact number on your dog's collar</li>
-          <li><strong>Trial walk</strong> with a photo report before you commit to a plan</li>
-        </ul>
-        <p class="note">Vet and government fees are charged at actual cost — we tell you the exact amount before anything is booked. Our onboarding fee is quoted at your meet &amp; greet.</p>
-      </div>
-      <div class="side">
-        <h3>Why bundle it?</h3>
-        <p>Chennai now expects pet dogs to be licensed and microchipped. We take the running around off your hands, so you don't have to find clinics, queue or work out the forms.</p>
-        <a href="#book" class="btn" style="text-align:center">Get the Onboarding Pack</a>
-      </div>
+      <div class="walk c1"><span class="ico">🌅</span><h3>Quick Walk</h3><p>30 minutes</p><span class="price">from ₹250</span></div>
+      <div class="walk c2"><span class="ico">🌳</span><h3>Full Walk</h3><p>60 minutes</p><span class="price">from ₹400</span></div>
+      <div class="walk c3"><span class="ico">📅</span><h3>Weekly Plan</h3><p>Same walker, same time</p><span class="price">ask for a quote</span></div>
     </div>
   </div>
 </section>
 
-<section id="why">
-  <div class="wrap">
-    <h2>Why microchipping &amp; a licence matter</h2>
-    <p class="lead">A walker is trusted with your dog outdoors. A microchip and licence are the best safety net if anything ever goes wrong.</p>
-    <div class="grid">
-      <div class="card"><h3>Permanent ID</h3><p>A microchip is a tiny chip placed under the skin by a vet. It can't fall off or be removed like a collar, so your dog can be identified for life.</p></div>
-      <div class="card"><h3>Faster return if lost</h3><p>A vet or authority can scan the chip and use the registered details to contact you quickly, even if your dog slips its leash on a walk.</p></div>
-      <div class="card"><h3>Stay within the rules</h3><p>The Greater Chennai Corporation requires pet dogs to be licensed, and owners without a licence can be fined (reported as ₹5,000). The pack keeps you covered.</p></div>
-      <div class="card"><h3>Vaccination records</h3><p>Licensing goes with up-to-date anti-rabies vaccination, which protects your dog, your family and the dogs they meet in the park. Free anti-rabies shots are offered at Corporation clinics.</p></div>
-      <div class="card"><h3>Peace of mind at home</h3><p>Having your dog officially registered gives you paperwork to show when apartment associations or neighbours raise questions.</p></div>
-      <div class="card"><h3>Trust both ways</h3><p>You know your dog is identifiable; we know exactly who we're walking and who to call. It's how a professional walking service should work.</p></div>
-    </div>
-    <p class="note">Rules, fees and deadlines can change. Check the latest on the <a href="https://chennaicorporation.gov.in/" target="_blank" rel="noopener">Greater Chennai Corporation website</a>; we'll confirm the current requirements with you at onboarding.</p>
-  </div>
-</section>
-
-<section id="how" style="background:#eef2f1">
+<section style="padding-top:0">
   <div class="wrap">
     <h2>How it works</h2>
-    <p class="lead">From first message to first walk in a few days.</p>
     <div class="steps">
-      <div class="step"><h3>Message us</h3><p>Tell us about your dog and your area via the form or WhatsApp.</p></div>
-      <div class="step"><h3>Meet &amp; greet</h3><p>Your walker visits, meets your dog and agrees routine, timings and house rules.</p></div>
-      <div class="step"><h3>Onboarding Pack</h3><p>We arrange the microchip and licence paperwork, and fit the ID tag.</p></div>
-      <div class="step"><h3>Walks begin</h3><p>Regular walks with a photo update every time. You're always in the loop.</p></div>
+      <div class="step"><b>1</b><h3>Message us</h3></div>
+      <div class="step"><b>2</b><h3>Meet your walker</h3></div>
+      <div class="step"><b>3</b><h3>Walks begin</h3></div>
     </div>
   </div>
 </section>
 
-<section id="trust">
+<section id="pack" style="padding-top:0">
   <div class="wrap">
-    <h2>How we earn your trust</h2>
-    <p class="lead">Handing over your dog takes trust. This is what we commit to on every walk.</p>
-    <div class="grid">
-      <div class="card"><h3>Known walkers</h3><p>You meet your walker before the first walk, and the same person walks your dog every time.</p></div>
-      <div class="card"><h3>Proof of every walk</h3><p>A photo and short note after each walk — time, distance, toilet and mood.</p></div>
-      <div class="card"><h3>Secure gear</h3><p>Dogs walk on a secure lead and harness, never off-leash in public areas.</p></div>
-      <div class="card"><h3>Emergency plan</h3><p>Your vet and emergency contact are on file, and we call you straight away if anything is wrong.</p></div>
+    <div class="pack">
+      <div>
+        <span class="badge">FOR NEW DOGS</span>
+        <h2>Onboarding Pack</h2>
+        <p>Safe from the first walk.</p>
+        <a href="#book" class="btn yellow">Get the pack</a>
+      </div>
+      <div class="items">
+        <div class="item"><i>🤝</i>Meet &amp; greet</div>
+        <div class="item"><i>🔎</i>Microchip<small>lost dog? scan &amp; trace</small></div>
+        <div class="item"><i>📄</i>Pet licence<small>we guide you</small></div>
+        <div class="item"><i>🏷️</i>ID tag</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="gallery" style="background:#fff">
+<section style="padding-top:0">
   <div class="wrap">
-    <h2>On the walk</h2>
-    <p class="lead">Parks, lawns and happy faces.</p>
     <div class="gallery">
-      <img class="tall" src="images/walk.jpg" alt="Woman walking two fluffy white dogs in a green park" loading="lazy">
-      <img class="wide" src="images/team.jpg" alt="Dog walker with five dogs on leashes in a park" loading="lazy">
-      <img class="wide" src="images/play.jpg" alt="Two Labradors on a bright green lawn" loading="lazy">
+      <img class="tall" src="images/walk.jpg" alt="Woman walking two fluffy white dogs in a park" loading="lazy">
+      <img class="wide" src="images/team.jpg" alt="Dog walker with five dogs on leashes" loading="lazy">
+      <img class="wide" src="images/play.jpg" alt="Two Labradors on a green lawn" loading="lazy">
     </div>
   </div>
 </section>
 
-<section id="areas" style="background:#eef2f1">
+<section id="areas" style="padding-top:0">
   <div class="wrap">
-    <h2>Where we walk</h2>
-    <p class="lead">Currently walking in these Chennai neighbourhoods.</p>
+    <h2>We walk in</h2>
     <div class="pills">
       <span>Adyar</span><span>Besant Nagar</span><span>Velachery</span><span>T. Nagar</span><span>Anna Nagar</span><span>Nungambakkam</span><span>Mylapore</span><span>Thiruvanmiyur</span><span>OMR</span><span>Porur</span>
     </div>
-    <p class="note">Don't see your area? Message us — we'll do our best to fit you in.</p>
   </div>
 </section>
 
-<section id="faq">
+<section id="book" class="contact">
   <div class="wrap">
-    <h2>Questions</h2>
-    <p class="lead">&nbsp;</p>
-    <details><summary>Do you only do dog walking?</summary><p>Yes. We focus on walking so we can do it well, with a walker your dog knows and trusts.</p></details>
-    <details><summary>Is the Onboarding Pack compulsory?</summary><p>It's included for every new dog, because identification and paperwork are the foundation of safe walking. If your dog is already microchipped and licensed, we'll simply verify the details and adjust the pack.</p></details>
-    <details><summary>What does microchipping involve?</summary><p>A vet places a small chip under your dog's skin in a quick visit. We arrange the appointment, and your details are registered against the chip number.</p></details>
-    <details><summary>Who pays the vet and licence fees?</summary><p>Vet and government fees are paid at actual cost. We confirm every amount with you in advance.</p></details>
-    <details><summary>What if it rains or it's very hot?</summary><p>We schedule walks for cooler hours, and shorten or move them on extreme days. On rainy days we may do shorter walks or reschedule.</p></details>
-    <details><summary>What if my dog is unwell or reactive?</summary><p>Tell us at the meet and greet. We'll plan accordingly, or let you know honestly if a different service would suit your dog better.</p></details>
-  </div>
-</section>
-
-<section id="book" class="contact" style="background:#e9eef1">
-  <div class="wrap">
-    <div class="info">
-      <h2>Start with the Onboarding Pack</h2>
-      <p class="lead">Fill in the form and it opens WhatsApp with your details ready to send. We usually reply within a few hours.</p>
-      <p><strong>Call / WhatsApp:</strong> +91 98765 43210</p>
-      <p><strong>Email:</strong> hello@heelchennai.in</p>
-      <p><strong>Based in:</strong> Chennai, Tamil Nadu</p>
-      <p><strong>Walks:</strong> Daily, 6–9 am and 4–8 pm</p>
+    <div>
+      <h2>Book a walk</h2>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ hello@heelchennai.in</p>
+      <p>⏰ Daily, 6–9 am &amp; 4–8 pm</p>
     </div>
     <form id="bookingForm">
       <div class="row">
@@ -312,20 +217,17 @@ footer a{color:#b9d4cb}
         <label>Phone<input name="phone" type="tel" required></label>
       </div>
       <div class="row">
-        <label>Dog's name &amp; breed<input name="dog" placeholder="e.g. Bruno, Labrador" required></label>
-        <label>Area in Chennai<input name="area" required></label>
+        <label>Dog's name &amp; breed<input name="dog" required></label>
+        <label>Area<input name="area" required></label>
       </div>
       <div class="row">
-        <label>I'm interested in
-          <select name="service">
-            <option>Onboarding Pack + walks</option><option>Quick Walk (30 min)</option><option>Full Walk (60 min)</option><option>Weekly Walk Plan</option>
-          </select>
+        <label>I want
+          <select name="service"><option>Onboarding Pack + walks</option><option>Quick Walk (30 min)</option><option>Full Walk (60 min)</option><option>Weekly Plan</option></select>
         </label>
-        <label>Already microchipped?
+        <label>Microchipped?
           <select name="chip"><option>Not yet</option><option>Yes</option><option>Not sure</option></select>
         </label>
       </div>
-      <label>Anything we should know?<textarea name="notes" rows="3" placeholder="Health needs, temperament, preferred time…"></textarea></label>
       <button class="btn" type="submit">Send on WhatsApp</button>
     </form>
   </div>
@@ -333,11 +235,7 @@ footer a{color:#b9d4cb}
 </main>
 
 <footer>
-  <div class="wrap">
-    <span class="logo" style="color:#fff"><b>HEEL</b></span><br>
-    Trusted dog walkers · Chennai, India<br>
-    © <span id="yr"></span> Heel. Photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> .
-  </div>
+  <div class="wrap">© <span id="yr"></span> Heel · Chennai · Photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></div>
 </footer>
 
 <a class="side-tab" href="#pack">Onboarding Pack · Microchip</a>
@@ -350,7 +248,7 @@ const WA_NUMBER = '919876543210';
 document.getElementById('bookingForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = Object.fromEntries(new FormData(e.target));
-  const msg = `Hi Heel! I'd like: ${f.service}.\nName: ${f.name}\nPhone: ${f.phone}\nDog: ${f.dog}\nArea: ${f.area}\nMicrochipped: ${f.chip}\nNotes: ${f.notes || '-'}`;
+  const msg = `Hi Heel! I'd like: ${f.service}.\nName: ${f.name}\nPhone: ${f.phone}\nDog: ${f.dog}\nArea: ${f.area}\nMicrochipped: ${f.chip}`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 });
 </script>
