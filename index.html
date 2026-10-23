@@ -99,6 +99,11 @@ nav .btn,nav .btn:hover{color:var(--btn-ink)}
 .w span{color:var(--muted);font-size:.93rem}
 .t1{background:var(--c1)}.t2{background:var(--c2)}.t3{background:var(--c3)}
 .fine{margin-top:14px;font-size:.85rem;color:var(--muted)}
+.plan{position:relative;border-radius:var(--radius);padding:28px;text-align:center}
+.plan h3{font-size:1.5rem}
+.plan .pr{font-family:'Fredoka';font-size:2.4rem;font-weight:700;margin:6px 0 12px}
+.plan ul{list-style:none}.plan li{margin-bottom:6px}
+.pop{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#23211F;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.06em;padding:5px 14px;border-radius:999px}
 .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch}
 .fs{background:var(--c2);border-radius:var(--radius);padding:18px 14px;text-align:center;position:relative}
 .fs:nth-child(1){background:var(--c1)}.fs:nth-child(5){background:var(--c3)}.fs:nth-child(7){background:var(--c1)}
@@ -145,6 +150,7 @@ footer a{color:var(--yellow)}
       <ul>
         <li><a href="#walks">Walks</a></li>
         <li><a href="#pack">New dogs</a></li>
+        <li><a href="#plans">Plans</a></li>
         <li><a href="#areas">Areas</a></li>
         <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch dark or light mode"><span id="themeIco">🌙</span><span id="themeTxt">Dark</span></button></li>
         <li><a href="#book" class="btn nav-cta">Book a walk</a></li>
@@ -178,7 +184,31 @@ footer a{color:var(--yellow)}
     <div class="grid">
       <div class="walk c1"><span class="ico">🌅</span><h3>Quick Walk</h3><p>30 minutes</p><span class="price">from ₹250</span></div>
       <div class="walk c2"><span class="ico">🌳</span><h3>Full Walk</h3><p>60 minutes</p><span class="price">from ₹400</span></div>
-      <div class="walk c3"><span class="ico">📅</span><h3>Weekly Plan</h3><p>Same walker, same time</p><span class="price">ask for a quote</span></div>
+      <a class="walk c3" href="#plans" style="text-decoration:none;color:inherit"><span class="ico">📅</span><h3>Daily Subscription</h3><p>Dedicated walkers, same time</p><span class="price">see plans ↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="plans" style="padding-top:0">
+  <div class="wrap">
+    <h2>Subscription plans</h2>
+    <div class="grid plans">
+      <div class="plan c1"><h3>1 Month</h3><div class="pr">₹6,500</div><ul><li>30 days</li><li><b>26 walks</b> guaranteed</li><li>Up to 4 days off</li></ul></div>
+      <div class="plan c2"><span class="pop">POPULAR</span><h3>3 Months</h3><div class="pr">₹18,000</div><ul><li>90 days</li><li><b>78 walks</b> guaranteed</li><li>Up to 12 days off</li></ul></div>
+      <div class="plan c3"><span class="pop">BEST VALUE</span><h3>Yearly</h3><div class="pr">₹66,000</div><ul><li>12 months</li><li><b>312 walks</b> guaranteed</li><li>Up to 48 days off</li></ul></div>
+    </div>
+    <p class="fine">Sample prices. Final pricing to be confirmed. Every plan starts with the compulsory Onboarding Pack.</p>
+
+    <div class="why">
+      <h3>How a plan works</h3>
+      <div class="whygrid">
+        <div class="w t1"><i>👥</i><b>Two dedicated walkers</b><span>A main walker and a backup from your area. Only these two walk your dog.</span></div>
+        <div class="w t2"><i>⏰</i><b>Same time every day</b><span>Need a different time? Change it in the app. Confirmed when your walkers are free.</span></div>
+        <div class="w t3"><i>🗓️</i><b>4 days off per month</b><span>Skipped by you or by the walker. No penalty inside the limit.</span></div>
+        <div class="w t1"><i>☔</i><b>Weather days don't count</b><span>When you and the walker both mark it as bad weather.</span></div>
+        <div class="w t2"><i>🔁</i><b>Walker misses more?</b><span>Extra days are added to the end of your plan, free.</span></div>
+        <div class="w t3"><i>📱</i><b>Run it from the app</b><span>See today's walker, photos, days used, and request time changes.</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -276,7 +306,7 @@ footer a{color:var(--yellow)}
       </div>
       <div class="row">
         <label>I want
-          <select name="service"><option>Onboarding Pack (₹400) + walks</option><option>Quick Walk (30 min)</option><option>Full Walk (60 min)</option><option>Weekly Plan</option></select>
+          <select name="service"><option>Onboarding Pack (₹400) + walks</option><option>Quick Walk (30 min)</option><option>Full Walk (60 min)</option><option>1-month plan</option><option>3-month plan</option><option>Yearly plan</option></select>
         </label>
         <label>Microchipped?
           <select name="chip"><option>Not yet</option><option>Yes</option><option>Not sure</option></select>
