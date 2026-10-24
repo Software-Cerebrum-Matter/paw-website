@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shop – Heel Pet Trusters</title>
-<meta name="description" content="Dog walking accessories from Heel: water bottles, raincoats, shoes, harnesses and more. Order on WhatsApp.">
+<meta name="description" content="Dog walking accessories from Heel: water bottles, raincoats, shoes, harnesses and more. Order in the Heel app.">
 <link rel="icon" type="image/png" href="images/logo/heel-icon-32.png">
 <link rel="apple-touch-icon" href="images/logo/heel-icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -192,14 +192,14 @@ footer a{color:var(--yellow)}
 <section class="shop-hero">
   <div class="wrap">
     <h1>Heel Shop</h1>
-    <p>Walk-ready gear for your dog. Order on WhatsApp.</p>
+    <p>Walk-ready gear for your dog. Order in the Heel app.</p>
   </div>
 </section>
 <section style="padding-top:8px">
   <div class="wrap">
     <div class="cats" id="cats"></div>
     <div class="prods" id="prods"></div>
-    <p class="fine">Sample products and prices. Final range, prices and delivery to be confirmed. Orders are confirmed with you on WhatsApp before payment.</p>
+    <p class="fine">Sample products and prices. Final range, prices and delivery to be confirmed. Shop checkout is placed in the Heel app.</p>
   </div>
 </section>
 </main>
@@ -214,13 +214,11 @@ footer a{color:var(--yellow)}
   <div id="cartList"></div>
   <div class="dfoot">
     <div class="tot"><span>Total</span><span id="total">₹0</span></div>
-    <input id="cname" placeholder="Your name">
-    <input id="caddr" placeholder="Delivery area in Chennai">
-    <button class="btn" id="order" type="button">Order on WhatsApp</button>
+    <p class="fine" style="margin:0">Checkout is in the app. Open the app, sign in and place your order.</p>
+    <a class="btn" id="order" href="https://app.heelwalks.in" style="text-align:center">Order in the app</a>
   </div>
 </aside>
 <script>
-const WA_NUMBER='919876543210'; // TODO: real number
 const P=[
  {id:'bottle',c:'Hydration',n:'Collapsible water bottle',d:'Squeeze-fill bottle with drinking tray.',p:299,e:'💧',bg:'c2'},
  {id:'bowl',c:'Hydration',n:'Travel water bowl',d:'Foldable silicone bowl with clip.',p:199,e:'🥣',bg:'c1'},
@@ -254,12 +252,6 @@ document.addEventListener('click',e=>{
 });
 function open_(o){$('drawer').classList.toggle('open',o);$('scrim').classList.toggle('show',o)}
 $('fab').onclick=()=>open_(true);$('dclose').onclick=$('scrim').onclick=()=>open_(false);
-$('order').onclick=()=>{
-  if(!cart.length){alert('Your cart is empty.');return}
-  const lines=cart.map(i=>`• ${i.n}${i.s?' ('+i.s+')':''} x${i.q} = ${inr(i.p*i.q)}`).join('\n');
-  const msg=`Hi Heel! I'd like to order:\n${lines}\nTotal: ${$('total').textContent}\nName: ${$('cname').value||'-'}\nArea: ${$('caddr').value||'-'}`;
-  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
-};
 renderCats();renderProds();renderCart();
 $('yr').textContent=new Date().getFullYear();
 </script>
