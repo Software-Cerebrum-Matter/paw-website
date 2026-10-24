@@ -1,0 +1,58 @@
+# Deploys this repo's static site to AWS (S3 in cosma-test + CloudFront in boja-medtech).
+# Settings come from repo Actions variables set by setup-github-oidc.ps1. No AWS keys are stored.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]   # keep in sync with DEPLOY_BRANCH
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # needed for OIDC sign-in to AWS
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        if: ${{ vars.BUILD_COMMAND != '' && hashFiles('package.json') != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Build
+        if: ${{ vars.BUILD_COMMAND != '' }}
+        run: ${{ vars.BUILD_COMMAND }}
+
+      - name: AWS sign-in (S3 deploy role, cosma-test)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_S3_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Upload files to S3
+        run: |
+          aws s3 sync "${{ vars.SITE_DIR }}" "s3://${{ vars.S3_BUCKET }}/" \
+            --delete --cache-control "public, max-age=300" \
+            --exclude ".git/*" --exclude ".github/*" --exclude "node_modules/*" \
+            --exclude "README.md" --exclude ".gitignore"
+
+      - name: AWS sign-in (CloudFront role, boja-medtech)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_CF_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Refresh CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CF_DISTRIBUTION_ID }}" --paths "/*"
+          echo "Deployed. Live within a few minutes."
